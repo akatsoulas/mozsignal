@@ -1,2 +1,3 @@
 src/factory_boy
 src/django-uuslug
+src/django-browserid
