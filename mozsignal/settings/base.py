@@ -49,6 +49,8 @@ LOGIN_REDIRECT_URL_FAILURE = '/'
 
 TEMPLATE_CONTEXT_PROCESSORS += (
     # other possible context processors here...
+    'django.core.context_processors.static',
+    'django.contrib.messages.context_processors.messages'
 )
 
 # Should robots.txt deny everything or disallow a calculated list of URLs we
@@ -98,3 +100,10 @@ LOGGING = {
 
 TIME_ZONE = 'UTC'
 USE_TZ = True
+
+# Templates
+TEMPLATE_LOADERS = (
+    'jingo.Loader',
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
