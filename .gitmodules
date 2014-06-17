@@ -4,3 +4,6 @@
 [submodule "vendor-local/src/factory_boy"]
 	path = vendor-local/src/factory_boy
 	url = https://github.com/rbarrois/factory_boy.git
+[submodule "vendor-local/src/django-uuslug"]
+	path = vendor-local/src/django-uuslug
+	url = https://github.com/un33k/django-uuslug.git
